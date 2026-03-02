@@ -24,3 +24,12 @@
 用户通过ProxyAdminWithVersion合约与VersionManager合约交互，完成注册初始版本，升级版本等操作。注册初始版本的原因主要是参与时间不同的用户的初始合约可能不一样，比如用户A参与该项目早，他的初始代码是版本1，用户B参与该项目晚，他的初始代码是本本3。
 
 更详细的内容见该项目中的代码，这个项目基于hardhat框架，包括合约的代码和一个typescript编写的使用例子（非测试用例)。目前还很粗糙，后续会改造为foundry项目并提供测试用例。
+
+## 运行
+
+```
+npm install
+npx hardhat node
+ts-node ./test/testVersionManager.ts
+```
+
